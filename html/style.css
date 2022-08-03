@@ -1,0 +1,15 @@
+p {
+    color:blue;
+}
+h1 {
+    color:red;
+}
+h3 {
+     width:120px;
+     height:30px;
+     padding:20px;
+     margin:30px;
+     border:2px solid;
+     color:red
+}
+

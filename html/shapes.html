@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Shapes</title>
+</head>
+<body style="background-color: rgb(202, 223, 168);"></body>>
+    <h1 style="color: black; font-family:GT Ultra; padding-top: 50px; padding-left: 20px;" align="middle">Geometric Shapes</h1>
+    
+    <class="rectangle" style="margin-left:5em ;">
+        <svg id="rectangle" width="300" height="200">
+        <rect x="50" y="50" width="200" height="100" style="fill:orange; stroke:black; stroke-width:3;" />
+            
+            <text x="120" y="170">Rectangle</text>
+        </svg>
+   
+
+    <class="circle" style="margin-left:7em ;">
+    <svg id="circle" width="300" height="200">
+        <circle cx="100" cy="100" r="50" style="fill:lime; stroke:black; stroke-width:3;" />
+  
+        <text x="80" y="170">Circle</text>
+    </svg>
+
+
+<class="square" style="margin-right:50em ;">
+    <svg id="square" width="300" height="200">
+        <rect x="40" y="50" width="100" height="100" style="fill:rgb(119, 0, 255); stroke:black; stroke-width:3;" />
+        <text x="70" y="170">Square </text>
+    </svg>
+
+    <class="ellipse" style="margin-left:7em ;"></class>
+    <svg height="200" width="300">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text x="80" y="150">Ellipse</text>
+      </svg>
+
+      <class="star" style="margin-left:4em ;">
+      <svg id="star" width="200" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:rgb(0, 102, 255);stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        <text x="80" y="200">Star</text>
+      </svg>
+
+      <class="parallellogram" >
+        <svg height="200" width="400">
+            <polygon points="50,0 360,0 320,120 0,120" style="fill: red; stroke: black;"/>
+            <text x="80" y="150">Parallellogram</text>
+          </svg>
+
+
+
+
+    <svg height="200" width="300" >
+        <polygon points="60,1 250,1 225,50 25,50" style="fill: rgb(102, 96, 177); stroke: rgb(247, 248, 244);"/>
+        <polygon points="225,50 25,50 25,165 225,165" style="fill: rgb(99, 53, 91); stroke: rgb(248, 247, 247);"/>
+        <polygon points="250,1 225,50 225,165 250,100" style="fill: rgb(223, 215, 110); stroke: rgb(250, 245, 245);"/>
+        <text x="80" y="190">Pyramid</text>
+    </svg>
+
+    <class="right-triangle" ;>
+        <svg height="300" width="300" >
+            <polygon points="100,200 200,200 100,100" style="fill:rgb(0, 31, 78);stroke:rgb(4, 4, 5);stroke-width:1" />
+            <text x="80" y="230">Right-Triangle</text>
+          </svg>
+
+          <svg height="500" width="500">
+            <ellipse cx="200" cy="300" rx="90" ry="50" stroke="black" stroke-width="1" fill="red" />
+            <polygon points="110,80 110,300 290,300 290,80" fill="red"/>
+            <ellipse cx="200" cy="80" rx="90" ry="50" stroke="black" stroke-width="1" fill="red" />
+            <text x="150" y="370">Cylinder</text>
+          </svg>
+
+</body>
+</html>

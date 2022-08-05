@@ -1,0 +1,38 @@
+
+.title{
+border-radius: 10px;
+margin-bottom: 10px;
+text-align:center;
+width: 550px;
+color:#6b00dd;
+border: solid black 1px;
+font-size:30px;
+}
+
+
+input[type="button"]
+{
+border-radius: 10px;
+background-color:#b787ec;
+color: black;
+border-color:#b787ec ;
+width:100%;
+padding:30px;
+font-size:40px;
+}
+
+
+input[type="text"]
+{
+border-radius: 10px;
+text-align: right;
+background-color:white;
+border-color: black ;
+width:100%;
+padding:40px;
+font-size:30px;
+}
+
+td{
+    padding:1px;
+}

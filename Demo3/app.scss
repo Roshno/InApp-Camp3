@@ -1,9 +1,32 @@
+//button
 @use '@material/button/mdc-button';
 @use '@material/button';
 @use "@material/button/styles" as buttonStyles;
+
+//appbar
 @use "@material/icon-button";
 @use "@material/icon-button/styles";
 @use "@material/top-app-bar/mdc-top-app-bar";
+
+// data table
+@use "@material/checkbox";
+@use "@material/data-table/data-table";
+
+//radio
+@use "@material/radio/styles" as radioStyles;
+@use "@material/form-field";
+
+//slider 
+@use "@material/slider/styles" as sliderStyles;
+
+//image list
+@use "@material/image-list/mdc-image-list";
+@use "@material/image-list";
+.my-image-list {
+    @include image-list.standard-columns(5);
+    width: 200vh,
+  }
+
 
 *{
     padding: 0;
@@ -11,7 +34,11 @@
 }
 .foo-button {
 @include button.container-fill-color(darksalmon);
+@include form-field.core-styles;
 }
+@include checkbox.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;
 
 body {
     color: blue;

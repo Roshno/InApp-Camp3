@@ -1,0 +1,18 @@
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/button/styles" as buttonStyles;
+@use "@material/icon-button";
+@use "@material/icon-button/styles";
+@use "@material/top-app-bar/mdc-top-app-bar";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.foo-button {
+@include button.container-fill-color(darksalmon);
+}
+
+body {
+    color: blue;
+}

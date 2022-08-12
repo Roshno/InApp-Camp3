@@ -195,55 +195,69 @@ car.stop();
 
 //OOPs in JavaScript
 class Person {
-    //declaraing a constructor
+    //declaring a constructor
     constructor(name,age) {
         this.name = name;
         this.age = age;
     }
     greet() {
-        console.log('Hello '+this.name);
+        //console.log('Hello '+this.name);
     }
 }
 //creating
 var tom = new Person('Tom', 30);
-tom.greet();
+//tom.greet();
+
+//JSON Objects
+//Creating a JSON object using the stringify() method
+var jsonstring = JSON.stringify({
+    name: "Abhi",
+    age: 30,
+    Address: {
+        district: "TVM",
+        location: "Technopark"
+    }
+});
+//console.log(jsonstring)
 
 
-class Student {
-    constructor(name, studclass, age, gender, location) {
-        this.name = name;
-        this.studclass = studclass;
-        this.age = age;
-        this.gender = gender;
-        this.location = location;
-    }
-    add() {
-        console.log('Greeting '+this.name);
-    }
+//parsing the JSON string
+var parsedjson = JSON.parse(jsonstring)
+//alert(parsedjson.name)
+//alert(parsedjson.age)
+//alert(parsedjson.Address.district)
+//alert(parsedjson.Address.location)
 
-    edit() {
-        console.log()
-    }
-    delete() {
-        console.log()
-    }
+//select Html elements using javascript
+var mypelements = document.getElementsByTagName('p');
+var myh2withid = document.getElementById('myh2elemid');
+var myh3withid = document.getElementsByClassName('myh3elemclass');
+
+//using css selectors (he same style of selection used in css)
+//selecting a single or first occurence of an element
+var myheaderwithid = document.querySelector('#header');
+var myallbtns = document.querySelectorAll('.btn');
+
+//fetching values or data inside the html element after selecting it
+//getting the text content inside an element
+//alert(mypelements[0].textContent)
+//alert(mypelements[1].textContent)
+//get the value from html elements like in textbox 
+var mytxtname = document.getElementsByName("txtcustname");
+//alert(mytxtname[0].value);
+//getting the inner html content of an element
+//alert(myheaderwithid.innerHTML)
+
+var handleClick = function(event) {
+    //getting the textbox value and orinting it
+    alert(document.getElementById("mytxtbox").value)
+    //assigning a new value to the textbox
+    document.getElementById("mytxtbox").value = "The new value";
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var mybtn = document.getElementById('btn1');
+mybtn.addEventListener('click',handleClick);
 
 
 

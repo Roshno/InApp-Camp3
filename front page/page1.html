@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    
+    
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+              <a href="index.html" class="brand-logo center"><img src="logo.jpg"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+              </ul>
+            </div>
+          </nav>
+<p align="middle">
+Material Design is a design language developed by Google in 2014. Expanding on the "cards" that debuted in Google Now, Material Design uses more grid-based layouts, responsive animations and transitions, padding, and depth effects such as lighting and shadows. Google announced Material Design on June 25, 2014, at the 2014 Google I/O conference.
+
+The main purpose of Material Design is the creation of a new visual language that combines principles of good design with technical and scientific innovation. Designer Matías Duarte explained that, "unlike real paper, our digital material can expand and reform intelligently. Material has physical surfaces and edges. Seams and shadows provide meaning about what you can touch." Google states that their new design language is based on paper and ink but implementation takes place in an advanced manner.
+
+In 2018, Google detailed a revamp of the language, with a focus on providing more flexibility for designers to create custom "themes" with varying geometry, colors, and typography. Google released Material Theme Editor exclusively for the macOS design application Sketch.
+</p>
+
+<div class="row">
+
+    <div class="col s12 m4">
+        <div class="card">
+        <div class="card-image">
+            <img src="3.jpg">
+        </div>
+
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="logo.jpg"></a>
+      <a href="#name"><span class="white-text name">Material Design</span></a>
+      <a href="#email"><span class="white-text email">Inspired by Material Design</span></a>
+    </div></li>
+    <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="page1.html"><i class="material-icons">radio_button_checked</i>Showcase</a></li>
+    <li><a href="page1.html"><i class="material-icons">build</i>Tools and Resources</a></li>
+    <li><a href="page1.html"><i class="material-icons">burst_mode</i>Themes and Templates</a></li>
+    <li><a href="page1.html"><i class="material-icons">colorize</i>Mockups and Concepts</a></li>
+    <li><a href="page1.html"><i class="material-icons">extension</i>Apps</a></li>
+    <li><a href="page1.html"><i class="material-icons">palette</i>WordPress</a></li>
+  </ul>
+
+  
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const options={'edge':'left'}
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+      </script>
+    </body>
+  </html>

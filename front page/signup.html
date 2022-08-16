@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+              <a href="index.html" class="brand-logo center"><img src="logo.jpg"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Signup.html">Sign Up</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="office.jpg">
+      </div>
+      <a href="#user"><img class="circle" src="logo.jpg"></a>
+      <a href="#name"><span class="white-text name">Material Design</span></a>
+      <a href="#email"><span class="white-text email">Inspired by Material Design</span></a>
+    </div></li>
+    <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="page1.html"><i class="material-icons">radio_button_checked</i>Showcase</a></li>
+    <li><a href="page1.html"><i class="material-icons">build</i>Tools and Resources</a></li>
+    <li><a href="page1.html"><i class="material-icons">burst_mode</i>Themes and Templates</a></li>
+    <li><a href="page1.html"><i class="material-icons">colorize</i>Mockups and Concepts</a></li>
+    <li><a href="page1.html"><i class="material-icons">extension</i>Apps</a></li>
+    <li><a href="page1.html"><i class="material-icons">palette</i>Wordpress</a></li>
+  </ul>
+
+  <div class="container">
+    <form id="form" class="form">
+        <h2>Sign Up</h2>
+        <div class="form-control">
+            <label for="username">Full Name</label>
+            <input type="text" id="username" placeholder="Full Name">
+            <small>Enter Name</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="E-mail">
+            <small>Enter Email</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Phone(Enter Only 10 Digit)</label>
+            <input type="tel" id="phone" placeholder="Phone Number">
+            <small>Enter Phone number</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <small>Enter Password</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" placeholder="Confirm Password">
+            <small>Enter Password again</small>
+        </div>
+        <button>Submit</button>
+    </form>
+</div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const options={'edge':'left'}
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+      </script>
+         <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
